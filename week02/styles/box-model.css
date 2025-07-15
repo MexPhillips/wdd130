@@ -26,4 +26,6 @@ blockquote {
 
 }
 
-cite {}
+cite {
+    text-align: right;
+}
