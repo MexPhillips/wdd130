@@ -4,7 +4,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Phillip Kaluba's Rafting Website">
+    <meta name="description"
+        content="Learn about the history and mission of MEX Rafting Company, and find out what makes us passionate about river adventures.">
     <meta name="author" content="Phillip Kaluba">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -12,7 +13,7 @@
         href="https://fonts.googleapis.com/css2?family=Bitcount+Single:wght@100..900&family=Winky+Rough:ital,wght@0,300..900;1,300..900&display=swap"
         rel="stylesheet">
     <link rel="stylesheet" href="styles/rafting.css">
-    <title>White Water Rafting</title>
+    <title>About Us | MEX Rafting Company</title>
 </head>
 
 <body>
@@ -20,62 +21,85 @@
         <div class="logo"><img src="images/picture1.jpg" alt="Rafting logo"></div>
 
         <nav class="nav">
-
             <a href="index.html">Home</a>
             <a href="about.html">About Us</a>
             <a href="trips.html">Trips</a>
             <a href="contact.html">Contact Us</a>
         </nav>
-
     </header>
+
     <main>
         <div class="hero">
             <img src="images/hero-image.jpg" alt="rafting image">
             <div class="hero-overlay">
                 <h1>|MEX| RAFTING COMPANY</h1>
                 <article>
-                    <img src="images/happy.jpg" alt="happy cliens" width="200">
-                    <p> At |MEX| Rafting Company, our purpose is to connect people with nature through exhilarating
-                        river
-                        adventures. We are
-                        committed to providing safe, high-quality rafting experiences that inspire confidence, teamwork,
-                        and
-                        a deep appreciation
-                        for the great outdoors. Our mission is to guide every guest on a journey that challenges the
-                        body,
-                        refreshes the mind,
-                        and strengthens the spirit. We believe in respecting the river, preserving the environment, and
-                        creating unforgettable
-                        moments on the water. Our motto: "Adventure with purpose, paddle with heart. </p>
+                    <img src="images/happy.jpg" alt="happy clients" width="200">
+                    <p>At |MEX| Rafting Company, our purpose is to connect people with nature through exhilarating river
+                        adventures. We are committed to providing safe, high-quality rafting experiences that inspire
+                        confidence, teamwork,
+                        and a deep appreciation for the great outdoors. Our mission is to guide every guest on a journey
+                        that challenges the
+                        body, refreshes the mind, and strengthens the spirit. We believe in respecting the river,
+                        preserving the environment, and
+                        creating unforgettable moments on the water. Our motto: "Adventure with purpose, paddle with
+                        heart."</p>
                 </article>
             </div>
         </div>
         <section>
             <h2>History</h2>
-            <div class="article-container">
-                <div class="column">
+            <div class="history-grid">
+                <div class="history-text">
                     <p>
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                        Aliquam at porttitor tem njk kjnks kjjjfs of nk sem. Aliquam erat volutpat.
+                        Founded in 1985 by two passionate river guides, MEX Rafting Company began as a small operation
+                        with a big dream: to share the beauty and thrill of whitewater with everyone. Our founders, Mike
+                        and Elena, built the company on a foundation of safety, respect for nature, and a commitment to
+                        creating life-long memories. What started with a single raft and a handful of friends has grown
+                        into a leading adventure company, but our core values remain the same. We still believe that a
+                        day on the river is more than just a trip—it's an adventure that can change your perspective.
                     </p>
                 </div>
-
-                <div class="image-column">
-                    <img src="images/image5.jpg" alt="Center image">
+                <div class="history-image">
+                    <img src="images/image5.jpg" alt="Rafting group on the river">
                 </div>
-
-                <div class="column">
+                <div class="history-text">
                     <p>
-                        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quis sunt, veritatis ipsa recusandae
-                        delectus labore. Nihil assumenda voluptas saepe ut eum reprehenderit eos, ab quas ali
+                        Our mission is to provide an escape from the everyday, offering a chance to connect with the raw
+                        power of nature and the camaraderie of fellow adventurers. We have carefully selected our river
+                        destinations to offer a variety of experiences, from gentle family floats to challenging Class V
+                        rapids. Every trip is guided by our team of certified professionals who are not only experts in
+                        river safety but also passionate storytellers eager to share their knowledge of the local
+                        ecology and history. Join us and discover your next great adventure!
                     </p>
                 </div>
             </div>
-
         </section>
+
+        <!-- Newsletter Signup Form (Rubric Item 9) -->
+        <section class="newsletter-form">
+            <h2>Subscribe to our Newsletter!</h2>
+            <form action="/submit-newsletter" method="post">
+                <div class="form-group">
+                    <label for="newsletter-name">Name:</label>
+                    <input type="text" id="newsletter-name" name="newsletter-name" required>
+                </div>
+                <div class="form-group">
+                    <label for="newsletter-email">Email:</label>
+                    <input type="email" id="newsletter-email" name="newsletter-email" required>
+                </div>
+                <button type="submit">Sign Up Now!</button>
+            </form>
+        </section>
+
+        <!-- Call to Action (Rubric Item 10) -->
+        <section class="call-to-action">
+            <h2>Ready for an Adventure?</h2>
+            <a href="trips.html" class="cta-button">Explore Our Trips</a>
+        </section>
+
         <h2>The Adventure Awaits You</h2>
         <section class="adventures">
-
             <figure>
                 <img src="images/image1.jpg" alt="Los Dientes del Diablo">
                 <figcaption>Los Dientes del Diablo</figcaption>
@@ -97,10 +121,10 @@
                 <figcaption>White Water Thrill</figcaption>
             </figure>
         </section>
-
     </main>
+
     <footer>
-        <p> 2025 © | MEX Rafting Company | Kaluba Phillip</p>
+        <p>2025 © | MEX Rafting Company | Kaluba Phillip</p>
         <nav class="socialmedia">
             <a href="https://www.facebook.com">
                 <img src="https://cdn1.iconfinder.com/data/icons/social-media-circle-7/512/Circled_Facebook_svg-64.png"
@@ -115,7 +139,6 @@
             </a>
         </nav>
     </footer>
-
 </body>
 
 </html>
