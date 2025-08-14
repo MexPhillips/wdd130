@@ -5,7 +5,6 @@
     --accent2-color: #FFE5D4;
     --heading-font: "Bitcount Single", Impact, sans-serif;
     --body-font: "Winky Rough", cursive, sans-serif;
-
 }
 
 /* Base and Global Styles */
@@ -38,7 +37,6 @@ article {
     justify-content: space-between;
     align-items: center;
     padding: 1rem;
-    border-radius: 0.5cm;
 }
 
 .logo img {
@@ -52,7 +50,9 @@ article {
     padding: 8px;
 }
 
-/* Hero Section (Home Page) */
+/* --- */
+
+/* Hero Section (Trips Page) */
 .hero {
     position: relative;
 }
@@ -74,6 +74,8 @@ article {
     background-color: var(--accent1-color);
     color: black;
     opacity: 0.6;
+    margin: 0;
+    /* Ensures the h1 is positioned correctly */
 }
 
 .hero article {
@@ -87,34 +89,18 @@ article {
     background-color: var(--accent1-color);
     color: black;
     opacity: 0.6;
-    /* Note: Opacity on text can be an accessibility concern */
+    margin: 0;
+
 }
 
 .hero article img {
     float: right;
     width: 125px;
     border-radius: 8px;
+    margin-left: 10px;
 }
 
-/* Trips Page */
-.article-container {
-    display: grid;
-    grid-template-columns: 1fr auto 1fr;
-    gap: 20px;
-    align-items: start;
-    margin: auto;
-}
-
-.column {
-    text-align: justify;
-}
-
-.image-column img {
-    max-width: 200px;
-    height: auto;
-    border-radius: 8px;
-}
-
+/* Trips Grid */
 .adventures {
     display: flex;
     justify-content: space-between;
@@ -125,14 +111,17 @@ article {
 
 .adventures figure {
     flex: 0 0 auto;
-    width: 18%;
-    /* Use percentage for responsiveness */
+    width: 200px;
+    /* Set a fixed width for each card */
     text-align: center;
 }
 
 .adventures img {
     width: 100%;
-    height: auto;
+    height: 150px;
+    /* Set a fixed height for a consistent look */
+    object-fit: cover;
+    /* Ensures images fill the space without distortion */
     border-radius: 8px;
     box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
 }
@@ -141,48 +130,6 @@ article {
     margin-top: 8px;
     font-size: 0.9rem;
     font-weight: 500;
-}
-
-/* Contact Page Sections */
-.company-info {
-    border: 1px solid #000;
-    padding: 1rem;
-}
-
-.company-map iframe {
-    width: 100%;
-    height: 300px;
-    border: 0;
-    margin-top: 1rem;
-}
-
-.staff-section {
-    display: flex;
-    justify-content: center;
-    gap: 20px;
-    flex-wrap: wrap;
-    text-align: center;
-    margin-top: 1rem;
-}
-
-.staff-section figure {
-    flex: 1;
-    max-width: 250px;
-    margin: 0;
-}
-
-.staff-section img {
-    width: 100%;
-    height: 180px;
-    object-fit: cover;
-    background-color: #ddd;
-    border-radius: 4px;
-}
-
-.staff-section figcaption {
-    margin-top: 0.5rem;
-    font-size: 0.95rem;
-    line-height: 1.4;
 }
 
 /* Footer */
